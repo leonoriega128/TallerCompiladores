@@ -1,0 +1,14 @@
+Verificacion del analizador sintactico ANTLR 4.13.2
+Comando: ./tools/verify_parser.ps1
+
+programa_informe1: ACEPTADO; errores sintacticos=0
+precedencia_y_constructos: ACEPTADO; errores sintacticos=0
+comparacion_encadenada: RECHAZADO; errores sintacticos=1
+  line 3:21 mismatched input '<' expecting {'&&', '||', '+', '-', '*', '/', ';'}
+punto_y_coma_faltante: RECHAZADO; errores sintacticos=1
+  line 4:0 missing ';' at '}'
+
+La entrada sintaxis_precedencia_valida.dfd también se comprobó con TestRig -tokens.
+La salida del árbol confirma la precedencia: la multiplicación queda agrupada dentro
+del producto antes de la suma, NOT contiene la relación, AND agrupa antes de OR y
+los signos unarios se analizan antes de las operaciones binarias.

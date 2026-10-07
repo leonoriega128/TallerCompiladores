@@ -1,0 +1,5 @@
+SISTEMA Prueba;
+NIVEL 0 {
+  booleano b = 1 < 2 < 3;
+}
+FIN_SISTEMA

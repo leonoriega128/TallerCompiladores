@@ -1,0 +1,12 @@
+SISTEMA Prueba;
+NIVEL 0 {
+  entero x = 2 + 3 * 4;
+  entero positivo = +2;
+  real r = -3.5;
+  booleano b = not x < 10 && true || false;
+  si (b) { imprimir(x); } sino { imprimir(r); }
+  mientras (x < 20 && not false) { x = x + 1; }
+  validar_modelo(0);
+  imprimir(contar_nodos(proceso));
+}
+FIN_SISTEMA

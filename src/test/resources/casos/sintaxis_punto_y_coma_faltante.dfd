@@ -1,0 +1,5 @@
+SISTEMA Prueba;
+NIVEL 0 {
+  entero x = 1
+}
+FIN_SISTEMA

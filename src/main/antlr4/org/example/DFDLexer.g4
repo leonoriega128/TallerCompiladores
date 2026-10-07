@@ -15,8 +15,10 @@ SINO             : 'sino';
 MIENTRAS         : 'mientras';
 ENTERO           : 'entero';
 BOOLEANO         : 'booleano';
+REAL             : 'real';
 TRUE             : 'true';
 FALSE            : 'false';
+NOT              : 'not';
 IMPRIMIR         : 'imprimir';
 VALIDAR_MODELO   : 'validar_modelo';
 CONTAR_NODOS     : 'contar_nodos';
@@ -47,6 +49,7 @@ COMA             : ',';
 
 // Literales y nombres.
 CADENA           : '"' ~["\r\n]* '"';
+CADENA_SIN_CIERRE : '"' ~["\r\n]*;
 NUMERO           : [0-9]+ ('.' [0-9]+)?;
 ID               : [a-zA-Z] [a-zA-Z0-9_]*;
 
