@@ -1,0 +1,7 @@
+SISTEMA Ventas;
+NIVEL 0 {
+  entidad cli = "Cliente";
+  proceso p1 = "Gestionar";
+  flujo f1 = conectar(cli -> p1) con_dato "Pedido";
+}
+FIN_SISTEMA
