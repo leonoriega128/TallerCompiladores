@@ -22,7 +22,6 @@
             <groupId>org.antlr</groupId>
             <artifactId>antlr4</artifactId>
             <version>${antlr4.version}</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
     <build>
@@ -39,7 +38,9 @@
                         </goals>
                     </execution>
                 </executions>
-                <configuration />
+                <configuration>
+                    <visitor>true</visitor>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
